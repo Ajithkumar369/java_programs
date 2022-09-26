@@ -1,0 +1,45 @@
+//overriding methode
+
+class bank
+{
+    int value()
+    {
+        return 0;
+    }
+}
+class a extends bank
+{
+    int value()
+    {
+        return 10;
+    }
+}
+class b extends bank
+{
+    int value()
+    {
+        return 100;
+    }
+}
+class c extends bank
+{
+    int value()
+    {
+        return 1000;
+    }
+}
+class Main
+{
+    public static void main(String args[])
+    {
+        a A=new a();
+        b B=new b();
+        c C=new c();
+        bank obj=new bank();
+        System.out.println("Bank A money="+A.value()+"\n");
+        System.out.println("Bank B money="+B.value()+"\n");
+        System.out.println("Bank C money="+C.value());
+
+
+    }
+}
