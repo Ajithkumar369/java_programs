@@ -1,0 +1,28 @@
+//simple multiple constructor program
+import java.io.*;
+
+class example
+{
+    void calculate_area(int a)
+    {
+        System.out.println("calculate square value="+a*a+"\n");
+    }
+    void calculate_area(int base,int height)
+    {
+        System.out.println("calculate rectancle value="+base*height+"\n");
+        
+    }
+    void calculate_area(float r)
+    {
+        System.out.println("calculate circle value="+3.14*r*r);
+    }
+
+public static void main(String args[])
+{
+    example obj=new example();
+    obj.calculate_area(5);
+    obj.calculate_area(10,10);
+    obj.calculate_area(5.65f);
+ 
+}
+}
