@@ -1,0 +1,21 @@
+//using the interface
+
+interface calculate
+{
+    double p1=3.14;
+    double areaOfCircle(double r);
+}
+class circle implements calculate
+{
+    public double areaOfCircle(double r)
+    {
+        return p1*r*r;
+    }
+public static void main(String args[])
+{
+ calculate obj;
+ circle c=new circle();
+ obj=c;
+ System.out.println("Area of circle="+obj.areaOfCircle(5));
+}
+}
