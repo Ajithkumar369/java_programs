@@ -1,0 +1,24 @@
+//Single inheritance
+import java.io.*;
+
+class collage
+{
+    int total_students=1000;
+}
+class department extends collage
+{
+   int cs_students=300;
+   int ece_students=500;
+    
+}
+class Main
+{
+    public static void main(String args[])
+    {
+        department obj=new department();
+        System.out.println("Collage total students="+obj.total_students+"\n");
+        System.out.println("Computer science students="+obj.cs_students+"\n");
+        System.out.println("Ecs students="+obj.ece_students);
+    }
+    
+}
